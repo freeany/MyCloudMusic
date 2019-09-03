@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="h">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>网易云音乐 音乐，播放器，网易，下载，播放，DJ，免费，明星，精选，歌单</title>
+  <link rel="icon" href="./public/favicon.ico">
+  <script src="./public/utils/tools.js"></script>
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      /* overflow-y: scroll; */
+      /* overflow-y: hidden; */
+    }
+
+    /* .box {
+      width: 100%;
+
+      position: fixed;
+      bottom: 0; */
+    /* } */
+
+    /* .b {
+      width: 1200px;
+      height: 53px;
+      background-color: #000;
+    }
+
+    .a {
+      position: fixed;
+
+      height: 53px;
+      width: 15px;
+      right: 0;
+      background: url('./assets/images/index/playbar.png');
+
+      background-position: -52px -393px;
+    } */
+
+
+    .container {
+      /* overflow: hidden; */
+
+      /* position: relative; */
+      /* height: 1000px; */
+      width: 100%;
+
+      /* padding-left: 105px; */
+      /* padding-bottom: 149px; */
+    }
+
+
+
+    .ifr {
+      width: 100%;
+      /* height: 1080px; */
+      /* height: 1500px; */
+      /* background-color: red; */
+      overflow-y: scroll;
+      /* height: 300px; */
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index2.css">
+
+  <link rel="stylesheet" href="./css/playKongJian.css">
+  <link rel="stylesheet" href="./css/base2.css">
+  <link rel="stylesheet" href="./fonts/bottom-music-player-style/iconfont.css">
+
+  <link rel="stylesheet" href="./css/login.css">
+  <script src="./js/jquery-1.12.4.js"></script>
+  <script src="./public/utils/tools.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- 这里写头部 -->
+    <!-- 头部 -->
+    <div id="g-topbar" class="g-topbar">
+      <!-- 黑底导航栏 -->
+      <div class="m-top">
+        <div class="topbar-wrap clearfix">
+          <!-- logo -->
+          <h1 class="fl"><a href="#"></a></h1>
+
+          <ul class="fl m-nav" id="m-nav">
+            <!-- 这里的li应该js获取 -->
+            <!--sub   中class fst为当前选中的标签页 -->
+            <li><a href="" class="fst"><em>发现音乐</em><sub>&nbsp;</sub></a></li>
+            <li><a href=""><em>我的音乐</em><sub>&nbsp;</sub></a></li>
+            <li><a href=""><em>朋友</em><sub>&nbsp;</sub></a></li>
+            <li><a href=""><em>商城</em><sub>&nbsp;</sub></a></li>
+            <li><a href="./page/yinyueren.html" target="_blank"><em>音乐人</em><sub>&nbsp;</sub></a></li>
+            <li><a href="" class="downloadClient"><em>下载客户端</em><sub class="hot">&nbsp;</sub></a></li>
+          </ul>
+
+          <div class="login-creator-search">
+            <div class="m-login" id="m-login">
+              <a href="" id="login">登录</a>
+              <div class="login-style" id="login-style">
+                <div class="login-style-icon">
+
+                </div>
+                <ul class="">
+                  <!-- li应该后台获取，高度由js计算 -->
+                  <li><a href="" id="phone-login"> <i class="iconfont icon-shouji"></i> <span>手机号登录</span> </a></li>
+                  <li><a href=""> <i class="iconfont icon-weixin"></i> <span>微信登录</span> </a></li>
+                  <li><a href=""> <i class="iconfont icon-web-icon-"></i> <span>QQ登录</span> </a></li>
+                  <li><a href=""> <i class="iconfont icon-weibo"></i> <span>新浪微博登录</span> </a></li>
+                  <li><a href=""> <i class="iconfont icon-wangyi"></i> <span>网易邮箱账号登录</span> </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="m-creator">
+              <a href="">创作者中心</a>
+            </div>
+
+            <div class="m-search">
+              <input type="text" placeholder="音乐/视频/电台/用户">
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+      <!-- 红底导航栏 -->
+      <div class="m-subnv" id="m-subnv">
+        <div class="subnv-wrap clearfix">
+          <div class="subnv-icon">
+
+          </div>
+
+          <ul id="ul-subnv">
+            <li><a href=""> <em id="tuijian" class="subnv-selected">推荐</em> </a></li>
+            <li><a href="" id="phb"> <em>排行榜</em> </a></li>
+            <li><a href=""> <em>歌单<span class="white-r-icon"></span></em> </a></li>
+            <li><a href=""> <em>主播电台</em> </a></li>
+            <li><a href=""> <em id="geshou">歌手</em> </a></li>
+            <li><a href=""> <em>新碟上架</em> </a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- 主体部分 -->
+    <iframe src="./index.html" id="ifr" name="ifr" frameborder="0" scrolling="yes" class="ifr" src="about:blank">
+
+    </iframe>
+
+    <!-- 底部 link -->
+    <!-- <div class="m-link clearfix">
+      <div class="wrap g-ft">
+              <div class="copy fl">
+                      <div class="copy-link  clearfix">
+                          <ul>
+                              <li><a class="a-first-link" href="">服务条款</a><span>|</span></li>
+                              <li><a href="">隐私政策</a><span>|</span></li>
+                              <li><a href="">版权投诉指引</a><span>|</span></li>
+                              <li><a href="">意见反馈</a><span>|</span></li>
+                          </ul>
+                      </div>
+                      <p>网易公司版权所有©1997-2019杭州乐读科技有限公司运营：浙网文[2018]3506-263号</p>
+                      <p>违法和不良信息举报电话：0571-89853516 举报邮箱: <a href="">ncm5990@163.com</a> </p>
+              </div> 
+              <div class="enter fr clearfix">
+                      <ul class="clearfix">
+                          <li><a class="enter-one" href=""></a><span>用户认证</span></li>
+                          <li><a class="enter-two" href=""></a><span>独立音乐人</span></li>
+                          <li><a class="enter-three" href=""></a><span>赞赏</span></li>
+                          <li><a class="enter-four" href=""></a><span>视频成就</span></li>
+                      </ul>
+              </div>
+          </div>
+    </div> -->
+    <!-- 这里是音乐播放器 -->
+    <!-- <div class="box">
+        <div class="b">
+  
+            <div class="a"></div>
+  
+        </div>
+    </div> -->
+
+    <!-- 音乐播放器组件 -->
+    <audio src="./assets/audio/Assassin's_Creed.mp3" id="audioPlayer"></audio>
+
+    <!-- 底部播放器栏 -->
+    <div class="music" id="music">
+
+      <!-- 存放的歌曲数据 -->
+      <div class="dataMusic" id="dataMusic"></div>
+
+
+      <!-- 版心 -->
+      <div class="container">
+        <!-- 前3个播放控件 -->
+        <div class="btns">
+          <i class="iconfont icon-shangyishou" title="上一首" id="pBtn"></i>
+          <i class="iconfont icon-bofang" title="播放" id="playBtn"></i>
+          <i class="iconfont icon-bofang1" title="暂停" id="ztBtn"></i>
+          <i class="iconfont icon-xiayishou" title="下一首" id="nBtn"></i>
+        </div>
+        <!-- 音乐图标 -->
+        <div class="music-icon">
+          <div class="rongqi">
+            <i class="iconfont icon-yinle" id="int_icon" title=""></i>
+            <img src="" alt="">
+          </div>
+        </div>
+        <div class="words">
+          <span id="words-sp1" style="float: left;color: white;opacity: 0.7;">当前歌曲: Assassin's_Creed</span>
+          <span id="words-sp2" style="float:right;color: white;opacity: 0.7;">暂无歌词</span>
+        </div>
+        <div class="play">
+          <!-- 496 10 -->
+          <div class="music-line" id="lineBox">
+            <div class="music-line-red" id="line-red"></div>
+            <div class="music-l-ball" id="line-ball">
+              <div class="small-ball-red"></div>
+            </div>
+            <div id="tran-line"></div>
+          </div>
+          <span id="start-time">00:00</span>
+          <span id="end-time">/ 00:00</span>
+        </div>
+        <div class="oper">
+          <i class="iconfont icon-icon-test" id="bookMark" title="收藏夹"></i>
+          <i class="iconfont icon-fenxiang" id="share" title="分享"></i>
+        </div>
+        <div class="ctrl">
+          <div class="sound-v-Box" id="soundBox">
+            <div class="sound-line" id="sound-line">
+              <div class="sound-line-red" id="sound-line-red"></div>
+              <div class="sound-ball" id="sound-ball" title="当前音量:100%">
+                <div class="sound-ball-red"></div>
+              </div>
+              <div id="tran_line"></div>
+            </div>
+          </div>
+          <i class="iconfont icon-shengyin" id="sound" title="当前音量:100%">
+          </i>
+          <i class="iconfont icon-xunhuanbofang" id="round-list" title="当前模式为列表循环"></i>
+          <div class="music-list">
+            <div class="listBox" id="music-listBox">0</div>
+            <i class="iconfont icon-wj-bflb" id="music-listBox-btn" title="列表"></i>
+          </div>
+          <span class="shuxian"></span>
+        </div>
+      </div>
+
+      <!-- 额外功能块 -->
+      <div class="big-list" id="big_list">
+        <div class="big-list-title">
+          <p class="list-text" id="list_text">播放列表(4)</p>
+          <span class="span1">
+            <div></div>
+            <p>收藏全部</p>
+          </span>
+          <span class="span2">
+            <div></div>
+            <p>清除</p>
+          </span>
+
+          <div class="big-list-xiaoshuxian"></div>
+          <div class="big-list-dashuxian"></div>
+          <div class="XX" id="xBtn"></div>
+
+        </div>
+      </div>
+
+      <!-- 锁 -->
+      <div class="suoBox">
+        <!-- <img src="./images/梯形.png" alt=""> -->
+        <img src="./assets/images/index/梯形.png" alt="">
+        <i class="iconfont icon-suo" id="suo1"></i>
+        <i class="iconfont icon-suo1" id="suo2"></i>
+      </div>
+    </div>
+
+    <!-- 登录窗口 -->
+    <div class="login-layer" id="login-layer">
+        <div class="z-title" id="title">
+            <div class="tit-dec">手机号登录</div>
+
+            <div class="z-close" id="z-close">
+              
+            </div>
+        </div>
+        <div class="z-con">
+            <div class="z-content">
+                    <div class="content-login-main">
+                        <form action="">
+                            <div class="phoneNumber" id="phoneNumber">
+                                <a href="">+86</a>
+                                <input type="text" placeholder="请输入手机号" id="phone">
+                            </div>
+            
+                            <div class="pwdNumber" id="pwdNumber">
+                                <input type="password" placeholder="请输入密码" id="pwd">
+                            </div>
+                            <!-- 这里是错误的信息 -->
+                            <div class="form-login-error" id="login-error">
+                                <!-- js规定 -->
+                                <span></span>
+                            </div>
+
+                            <div class="form-auto-login">
+                                <div class="auto-left">
+                                    <input type="checkbox" name="" id="auto-login">&nbsp;&nbsp;
+                                    <label for="auto-login">自动登录</label>
+                                </div>
+                                
+            
+                                <a href="" class="forgetPwd">忘记密码?</a>
+                            </div>
+        
+                            <div class="form-login-button"  id="login-btn">
+                                <a href="javascript:;" class="button-primary">
+                                    登&nbsp;&nbsp;录
+                                </a>
+                            </div>
+                    </form>
+        
+                    </div>
+                </div>
+        </div>
+       
+
+        <div class="layer-bottom">
+            <a href="">&lt; 其他登录方式</a>
+            <a href="">没有账号？免费注册 &gt;</a>
+        </div>
+    </div>
+    <!-- 遮罩层 应该写在全屏中 -->
+    <div class="login-zhezhao" id="login-zhezhao">
+
+    </div>
+  </div>
+
+  <!-- 对登录窗口进行操作的js -->
+  <script src="./js/login.js"></script>
+  <script>
+    var phoneLogin = document.getElementById('phone-login')
+    var loginLayer = document.getElementById('login-layer')
+
+    var loginZheZhao = document.getElementById('login-zhezhao')
+    phoneLogin.onclick = function(e) {
+      e.preventDefault || e.preventDefault()
+      loginZheZhao.style.display = 'block'
+      loginLayer.style.display = 'block'
+      return false
+    }
+  </script>
+
+  <script>
+    var ifr = document.getElementById("ifr")
+    // console.log(ifr)
+    window.onresize = function () {
+      console.log("页面被缩放了")
+      ifr.style.height = window.innerHeight + "px";
+    }
+    ifr.style.height = window.innerHeight - 4 + "px";
+
+    // 带有滚动条的当前窗口可见的宽度
+    // console.log(window.innerWidth)
+    var gTopbar = document.getElementById("g-topbar");
+    // 不带有滚动条的当前窗口可见的宽度
+    gTopbar.style.width = window.innerWidth - 17 + 'px';
+
+    var login = document.getElementById("m-login")
+    // var loginStyle = document.getElementById("m-login")
+    var loginStyle = document.getElementById('login-style')
+    // 这样直接写样式不太好，后期使用jq添加类。
+    login.onmouseenter = function () {
+      loginStyle.style.display = 'block'
+    }
+    login.onmouseleave = function () {
+      loginStyle.style.display = 'none'
+    }
+    // login.onmouseout = function() {
+    //     loginStyle.style.display = 'none'
+    // }
+
+    // var obj=document.getElementById("ifr").contentWindow;
+    // obj.onscroll = function() {
+    //   alert("滚动了")
+    // }
+    // console.log(obj) 
+    // var ifmObj=obj.a
+
+    // console.log(ifmObj) 
+    // alert(document.getElementById('m-top'))
+
+
+    // bind(window,'hashchange',fun)
+
+    // m-subnv
+    var ulSubnv = document.getElementById('ul-subnv')
+    var as = ulSubnv.getElementsByTagName('a')
+    var arrEm = [];
+    for (var i = 0; i < as.length; i++) {
+      arrEm.push(as[i].getElementsByTagName('em')[0])
+    }
+    // console.log(ulSubnv)
+    // var geshou = document.getElementById('geshou')
+
+
+    // function fun() {
+    // var hash = document.location.hash
+    ulSubnv.onclick = function (e) {
+      e.preventDefault || e.preventDefault()
+      var tarEle = e.srcElement || e.target
+
+      for (var i = 0; i < arrEm.length; i++) {
+        if (arrEm[i] === tarEle) {
+          // 如果点击的事件源刚好是em标签
+          for (var j = 0; j < arrEm.length; j++) {
+            arrEm[j].classList.remove('subnv-selected')
+          }
+          tarEle.classList.add('subnv-selected')
+          switch (arrEm[i].innerText) {
+            case '歌手':
+              ifr.src = './page/geshou.html'
+              break
+            case '新碟上架':
+              ifr.src = './page/xindieshangjia.html'
+              break
+            case '歌单' :
+              ifr.src = './page/gedan.html'
+              break
+            case '主播电台' :
+                ifr.src = './page/zhubodiantai.html'
+                break
+            case '排行榜' :
+              ifr.src = './page/paihangbang.html'
+              break
+            default:
+              ifr.src = './index.html'
+          }
+          return false;
+        }
+      }
+
+    }
+
+
+    // 点击红底导航栏
+
+    /* 
+      点击下载客户端隐藏m-top
+    */
+    var msubnv2 = document.getElementById('m-subnv')
+    document.addEventListener('click', function () {
+      msubnv2.style.display = 'block'
+    })
+
+
+    var ulMTop = document.getElementById('m-nav')
+    var lis2 = ulMTop.getElementsByTagName('li')
+
+    var as2 = []
+    for (var i = 0; i < lis2.length; i++) {
+      as2.push(lis2[i].getElementsByTagName('a')[0])
+    }
+    var em2 = []
+    // var as2 = ulMTop.getElementsByTagName('as2')
+
+    for (var j = 0; j < as2.length; j++) {
+      em2.push(as2[j].getElementsByTagName('em')[0])
+    }
+    var ifr = document.getElementById("ifr")
+
+    ulMTop.onclick = function (e) {
+      e.preventDefault || e.preventDefault()
+      var tarEle = e.srcElement || e.target
+      // console.log("aa")
+      for (var i = 0; i < lis2.length; i++) {
+        if (lis2[i] === tarEle || as2[i] === tarEle || em2[i] === tarEle) {
+          // 如果点击的事件源刚好是
+          for (var j = 0; j < lis2.length; j++) {
+            as2[j].classList.remove('fst')
+          }
+          tarEle.classList.add('fst')
+          console.log(as2[i].innerText.trim())
+          switch (as2[i].innerText.trim()) {
+            case '下载客户端':
+              msubnv2.style.display = 'none'
+              e.stopPropagation(); //阻止事件向上冒泡
+              ifr.src = './page/xiazaikehuduan.html'
+              break
+            case '音乐人' :
+              // console.log('')
+              // alert('进入音乐人')
+              // msubnv2.style.display = 'none'
+              e.stopPropagation(); //阻止事件向上冒泡
+              // window.location.href = './page/yinyueren.html'
+              return true
+              break
+            case '朋友' :
+              msubnv2.style.display = 'none'
+              e.stopPropagation(); //阻止事件向上冒泡
+              ifr.src = './page/pengyou.html'
+              break
+            case '我的音乐' :
+              msubnv2.style.display = 'none'
+              e.stopPropagation(); //阻止事件向上冒泡
+              ifr.src = './page/wodeyinyue.html'
+              break
+            default:
+              ifr.src = './index.html'
+          }
+          return false;
+        }
+      }
+
+    }
+            //  switch(hash) {
+                  // case '#gs' :
+
+            // }
+          // }
+  </script>
+  <script src="./js/playKongJian.js"></script>
+
+</body>
+ 
+</html>

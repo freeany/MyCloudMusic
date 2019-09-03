@@ -1,0 +1,504 @@
+
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+/* <!-- 头部 --> */
+.w {
+    width: 980px;
+    margin: 0 auto;
+  } 
+.m-top {
+    position: relative;
+    z-index: 1000;
+    height: 70px;
+    box-sizing: border-box;
+    background: #242424;
+    border-bottom: 1px solid #000;
+  }
+  .m-subnav {
+    z-index: 90;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+  }
+
+/* <!-- 中间部分 --> */
+.content-box {
+    height: 655px;
+    background-color: #ffff;
+    border-left: #d3d3d3 solid 1px;
+    border-right: #d3d3d3 solid 1px;
+
+}
+.content-box .hot {
+    height: 100px;
+    /* width: 1125px; */
+    margin-left: 50px;
+    margin-right: 50px;     
+    border-bottom: #c20c0c solid 3px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+
+}
+.content-box .hot div {
+   height: 58px;
+   /* background-color:blue; */
+   display: inline-block;
+   line-height: 58px;
+   margin-top: 39px;
+   font-size: 30px;
+   color: #333333;
+   /* border-radius: 10%; */
+}
+
+.content-box .hot div:hover {
+    background-color:#c20c0c;
+}
+
+/* --------------------------- */
+.big {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+.big .one {
+    width: 188px;
+    height: 221px;
+    background-color: #ffff;
+    position: relative;
+    margin-right:44px ;
+    margin-bottom:40px ;
+    
+  
+}
+.big .one .top {
+    width: 188px;
+    height: 154px;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.big .one .top img {
+    transition: 1s;
+}
+.big .one .top img:hover{
+    transform: scale(2)
+}
+.big .one .top .poster{
+    width: 154px;
+    float: left;
+}
+.big .one .top .jlt {
+    display: inline-block;
+    width: 34px;
+    height: 107px;
+    background-color: red;
+    margin-top: 27px;
+    background: url(../assets/images/NeteaseMall/pointlist.png) 0px -79px;
+    padding-bottom: 20px;
+}
+.big .one .top .jlt-2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    background: url(../assets/images/NewDiscOnShelf/iconall.png) 0px -112px;
+    position: absolute;
+    left: 125px;
+    bottom: 72px;
+}
+
+.big .one  .below {
+    width: 186px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.big .one  .below .span-1 {
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+}
+.big .one  .below .span-1:hover{
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.big .one  .below .span-2 {
+    font-size: 15px;
+    color: #666666;  
+}
+.big .one  .below .span-2:hover{
+    border-bottom: 1px solid #6666;
+}
+
+
+/* 有bug---------------- */
+.big .one  .below .span-2:hover{
+    border-bottom: 1px solid #666666;
+    cursor: pointer;
+}
+
+
+
+/* <!-- All new dish ---------------> */
+  .All-new-dish  {
+      height:930px;
+      border-left: #d3d3d3 solid 1px;
+      border-right: #d3d3d3 solid 1px;
+     
+  }
+  .All-new-dish  .location {
+      width: 55px;
+      height: 50px;
+      background-color:#f5f5f5;
+      position: absolute;
+      bottom: -700px;
+      right: 323px;
+      text-align: center;
+      border: 1px solid #dddddd;
+      border-radius: 5px;
+    
+  }
+
+  .All-new-dish  .location i {
+      display: inline-block;
+      margin-top: 8px;
+      margin-left: -4px;
+      margin-bottom: 5px;
+      width: 11px;
+      height: 9px;
+      background: url(../assets/images/index/icon.png)-45px -519px;
+  }
+  .All-new-dish .hot-new {
+      height: 44px;
+      margin-left:50px ;
+      margin-right:50px ;
+      border-bottom: #c20c0c solid 3px;
+
+  }
+  .All-new-dish .hot-new .title {
+      width: 124px;
+      height: 42px;
+      font-size: 30px;
+      color: #333333;
+      line-height: 40px;
+  }
+  .All-new-dish .hot-new li {
+      float: left;
+      line-height: 55px;
+      
+  }
+  .All-new-dish .hot-new li a {
+    margin: 0px 15px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .All-new-dish .hot-new li a:hover {
+    border-bottom: #cecece solid 1px;
+  }
+  .All-new-dish .all-poster .poster-1 {
+      width: 188px;
+      height: 211px;
+      background-color: #ffffff;
+      margin-top: 25px;
+      margin-left: 50px;
+      margin-bottom:18px ;
+     
+  }
+  .All-new-dish .all-poster .poster-1 .top {
+      height: 150px;
+      overflow: hidden;
+      position: relative;
+  }
+
+  .All-new-dish .all-poster .poster-1 img {
+      width: 152px;
+      border: #7f7f7f solid 1px;
+      box-sizing: border-box;
+
+
+  }
+
+  .All-new-dish .all-poster .poster-1 .jlt {
+    display: inline-block;
+    width: 34px;
+    height: 107px;
+    background-color: red;
+    margin-top: 13px;
+    background: url(../assets/images/NeteaseMall/pointlist.png) 0px -79px;
+    padding-bottom: 20px;
+}
+.All-new-dish .all-poster .poster-1 .jlt-2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    background: url(../assets/images/NewDiscOnShelf/iconall.png) 0px -112px;
+    position: absolute;
+    left: 124px;
+    bottom: 4px;
+}
+
+.All-new-dish .all-poster .poster-1  img {
+    transition: 1s;
+}
+.All-new-dish .all-poster .poster-1 img:hover{
+    transform: scale(2)
+}
+.All-new-dish .all-poster .poster-1  .below {
+    margin-top: 10px;
+    height: 49px;
+    /* background-color: blue; */
+}
+.All-new-dish .all-poster .poster-1  .below .span-1{
+    font-size: 18px;
+    color: #474747;
+    /* height: 28px; */
+    line-height: 30px;
+}
+.All-new-dish .all-poster .poster-1  .below .span-1:hover{
+    border-bottom:  #474747 solid 1px;
+    cursor: pointer;
+}
+.All-new-dish .all-poster .poster-1  .below .span-2{
+    font-size: 15px;
+    color: #666666;
+}
+.All-new-dish .all-poster .poster-1  .below .span-2:hover{
+    border-bottom:  #666666 solid 1px;
+    cursor: pointer;
+}
+.All-new-dish .liebiao {
+    margin: 0 auto;
+    width: 516px;
+    margin-top: 815px;
+   
+}
+.All-new-dish .liebiao .nums {
+    width: 237px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.All-new-dish .liebiao .nums .span-1 {
+    background-color: #e1151d;
+    color: #fff;
+}
+.All-new-dish .liebiao .nums span {
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    border: #666666 solid 1px;
+    text-align: center;
+    background-color: #ffffff;
+    font-size: 12px;
+    color: #333333;
+    border-radius: 5px;
+}
+.All-new-dish .liebiao .nums span:hover{
+    background-color: #cb1213;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.All-new-dish .liebiao .left {
+    width: 72px;
+    height: 24px;
+    background-color: #cccccc;
+    margin-left: 62px;
+  
+    border: #cccccc solid 1px;
+    text-align: center;
+    border: #7f7f7f solid 1px;
+    border-radius:5px;
+    line-height: 24px;
+    
+}
+
+.All-new-dish .liebiao .right {
+    width: 72px;
+    height: 24px;
+    background-color: #cccccc;
+    margin-right: 62px;
+    text-align: center;
+    border: #7f7f7f solid 1px;
+    border-radius:5px;
+    line-height: 24px;
+    
+}
+.All-new-dish .liebiao .right a {
+    color: #333333;
+}
+
+/* <!-- 底部---------- --> */
+
+
+.box {
+    border-top:#d3d3d3 solid 1px;
+}
+.footer {
+    width: 1226px;
+    height: 127px;
+    background-color: #f2f2f2; 
+    box-sizing: border-box;
+}
+.footer .left {
+    width: 723px;
+    height:127px ;
+}
+.footer .left .up {
+    margin-top: 26px;
+}
+.footer .left li {
+    float: left;
+    font-size: 15px;
+    color: #999999;
+}
+.footer .left li .a1 {
+    padding-left:0px ;
+}
+.footer .left li a {
+    padding-left:15px ;
+    padding-right:15px ;
+    font-size: 15px;
+    color: #999999;
+}
+.footer .left .down {
+    margin-top: 15px;
+}
+.footer .left .down p {
+    height: 30px;
+    font-size: 15px;
+    color: #666666;
+}
+
+
+.footer .right {
+    width: 501px;
+    /* background-color:skyblue; */
+    height:127px ;
+}
+.footer .right .one {
+    width: 96px;
+    height: 127px;
+    /* background-color: red; */
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 35px;
+    
+}
+.footer .right .one i {
+   
+    width: 89px;
+    height: 88px;
+    display: block;
+    background: yellow;
+    background: url(../assets/images/index/foot_enter_new.png)-120px -200px;
+}
+.footer .right .one a {
+    color: #797979;
+    line-height: 31px;
+}
+.footer .right .two {
+    margin-right: 46px;
+}
+.footer .right .two i {
+ margin-top: 10px;
+    width: 89px;
+    height: 88px;
+    display: block;
+    background: yellow;
+    background: url(../assets/images/index/foot_enter_new.png)0px 0px;
+}
+.footer .right .two a {
+    color: #797979;
+    line-height: 31px;
+    margin-left:17px; ;
+}
+
+.footer .right .three {
+    margin-right: 20px;
+}
+.footer .right .three i {
+ margin-top: 10px;
+    width: 89px;
+    height: 88px;
+    display: block;
+    background: yellow;
+    background: url(../assets/images/index/foot_enter_new.png)-120px -100px;
+}
+.footer .right .three a {
+    color: #797979;
+    line-height: 31px;
+    margin-left:36px; ;
+}
+.footer .right .four {
+    margin-right: 20px;
+}
+.footer .right .four i {
+ margin-top: 10px;
+    width: 89px;
+    height: 88px;
+    display: block;
+    background: yellow;
+    background: url(../assets/images/index/foot_enter_new.png)0px -200px;
+}
+.footer .right .four a {
+    color: #797979;
+    line-height: 31px;
+    margin-left:26px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

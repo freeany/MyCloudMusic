@@ -1,0 +1,523 @@
+.w {
+    width: 1100px;
+    margin: 0 auto;
+}
+* {
+    box-sizing: border-box;
+}
+i {
+    vertical-align: middle;
+}
+.m-top {
+    position: relative;
+    z-index: 1000;
+    height: 70px;
+    /* box-sizing: border-box; */
+    box-sizing: content-box;
+    background: #242424;
+    border-bottom: 5px solid #c20c0c;
+  }
+  /* .m-subnav {
+    z-index: 90;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+  } */
+
+.app {
+    width: 100%;
+    /* padding-top: 70px; */
+}
+body, textarea, select, input, button {
+    font-size: 14px;
+    color: #eee;
+    font-family: PingFangSCRegular,Arial, Helvetica, sans-serif;
+}
+a {
+    color: white;
+}
+/* .g-top {
+    width: 100%;
+    height: 70px;
+    background-color: #242424;
+    position: fixed;
+    top: 0;
+    border-bottom: 5px solid #c20c0c;
+    z-index: 9999;
+} */
+
+.g-download {
+    height: 760px;
+    background-color: #161616;
+}
+
+.m-topd {
+    height: 42px;
+    /* background-color: green; */
+    position: relative;
+}
+
+.n-ad {
+    display: block;
+    padding-top: 20px;
+}
+
+.n-ad:hover {
+    color: #b9b9b9;
+}
+
+.n-triangle {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid;
+    border-bottom: 10px solid;
+    border-right: 10px solid;
+    border-color: transparent transparent #fff;
+    margin: 0 auto;
+    right: 45px;
+    top: 67px;
+}
+
+.n-display {
+    cursor: pointer;
+    display: none;
+}
+
+.n-downloadall {
+    padding: 20px 0 0 20px;
+    position: absolute;
+    right: 0;
+    top: 77px;
+    width: 276px;
+    height: 250px;
+    background-color: #fff;
+    box-shadow: #000;
+    border-radius: 10px;
+}
+
+.n-downloadall ul li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+    width: 113px;
+    height: 45px;
+    background-color: #ebebeb;
+    color: #333;
+    line-height: 45px;
+    font-size: 12px;
+}
+
+.n-downloadall ul li i {
+    display: inline-block;
+    margin-left: 14px;
+    margin-right: 7px;
+    width: 26px;
+    height: 26px;
+}
+
+.n-downloadall ul a:nth-child(1) i {
+    /* background: url(../images/android1.png); */
+    background: url(../assets/images/DownloadClient/android1.png);
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(2) i {
+    background: url(../assets/images/DownloadClient/ios1.png);
+    /* background: url(../images/ios1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(3) i {
+    background: url(../assets/images/DownloadClient/ios1.png);
+    /* background: url(../images/ios1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(4) i {
+    background: url(../assets/images/DownloadClient/macos1.png);
+    /* background: url(../images/macos1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(5) i {
+    background: url(../assets/images/DownloadClient/windows1.png);
+    /* background: url(../images/windows1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(6) i {
+    background: url(../assets/images/DownloadClient/windows1.png);
+    /* background: url(../images/windows1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(7) i {
+    background: url(../assets/images/DownloadClient/windows1.png);
+    /* background: url(../images/windows1.png); */
+    background-size: 26px 26px;
+}
+
+.n-downloadall ul a:nth-child(8) i {
+    background: url(../assets/images/DownloadClient/linux.png);
+    /* background: url(../images/linux.png); */
+    background-size: 26px 26px;
+}
+
+.u-icond {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../assets/images/DownloadClient/download.png);
+    /* background: url(../images/download.png); */
+    background-size: 20px 20px;
+    vertical-align: middle;
+}
+
+.u-spand {
+    vertical-align: middle;
+}
+
+.g-bottomd {
+    padding-top: 70px;
+    /* height: 718px; */
+    /* background-color: rgb(177, 206, 218); */
+}
+
+.g-bottomd p {
+    line-height: 57px;
+    font-size: 24px;
+    color: #d0d0d0;
+    font-family: PingFangSC-Regular;
+}
+
+.g-bottomd span {
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+}
+
+/* downoload底部部分的样式 */
+
+.m-leftd {
+    width: 50%;
+    height: 557px;
+    /* background-color: pink; */
+    text-align: center;
+}
+
+.m-leftd img {
+    margin-top: 16px;
+    width: 464px;
+    height: 273px;
+}
+
+.u-macoS {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../assets/images/DownloadClient/macos.png);
+    /* background: url(../images/macos.png); */
+    background-size: 22px 22px;
+}
+
+.u-Windows {
+    margin-left: 26px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../assets/images/DownloadClient/windows.png);
+    /* background: url(../images/windows.png); */
+    background-size: 22px 22px;
+}
+
+.u-downpc, .u-downphone {
+    width: 302px;
+    height: 66px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 66px;
+    color: #d10000;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.u-downphone {
+    margin-left: 144px;
+}
+
+.mobile_qrcode {
+    position: absolute;
+    top: 50px;
+    width: 206px;
+    height: 246px;
+    /* background-color: #fff; */
+    margin: 278px 194px;
+    display: none;
+}
+
+.mobile_qrcode .erweima {
+    width: 204px;
+    height: 224px;
+    background: url(../assets/images/DownloadClient/erweima.png) no-repeat center center;;
+    /* background: url(../images/erweima.png) no-repeat center center; */
+    background-size: 164px 164px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 183px;
+    box-shadow: 2px 2px 10px #909090;
+}
+
+.mobile_qrcode p {
+    font-size: 12px;
+    color: #333;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: #fff transparent transparent;
+    margin: 0 auto;
+}
+
+.u-downpc:hover, .u-downphone:hover {
+    background-color: #b9b9b9;
+}
+
+.u-icon-ncode {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../assets/images/DownloadClient/icon-ncode.png);
+    /* background: url(../images/icon-ncode.png); */
+    background-size: 22px 22px;
+}
+
+.m-rightd {
+    width: 50%;
+    height: 557px;
+    /* background-color: red; */
+    text-align: center;
+}
+
+.m-rightd img {
+    margin-top: 16px;
+    margin-left: 35px;
+    width: 246px;
+    height: 273px;
+}
+
+.u-iPhone {
+    margin-left: 40px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../assets/images/DownloadClient/ios.png);
+    /* background: url(../images/ios.png); */
+    background-size: 22px 22px;
+}
+
+.u-Android {
+    margin-left: 26px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../assets/images/DownloadClient/android.png);
+    /* background: url(../images/android.png); */
+    background-size: 22px 22px;
+}
+
+/* 二维码部分 */
+
+.g-qrcode {
+    padding: 20px;
+    position: fixed;
+    width: 137px;
+    height: 153px;
+    background-color: #fff;
+    right: 25px;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #909090;
+    text-align: center;
+    font-size: 12px;
+}
+.g-qrcode  p {
+    color: #ccc
+}
+.g-qrcode img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* 主要内容的样式 */
+
+.g-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+.m-section1, .m-section2, .m-section3, .m-section4, .m-section5 {
+    width: 100%;
+    height: 438px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.m-section1, .m-section3, .m-section5 {
+    background-color: #fff;
+}
+
+.sec1_lt {
+    margin-left: 89px;
+}
+
+h3 {
+    color: #000;
+    font-size: 40px;
+    font-weight: normal;
+    margin-top: 171px;
+}
+
+.sec1_lt p {
+    color: #666;
+}
+
+.sec1_rt {
+    margin-right: 119px;
+    width: 408px;
+    height: 438px;
+    background: url(../assets/images/DownloadClient/sec1_rt.jpg) center center no-repeat;
+    /* background: url(../images/sec1_rt.jpg) center center no-repeat; */
+    background-size: 408px 190px;
+}
+
+/* 第二个小部分的样式 */
+
+.sec2_lt {
+    margin-left: 89px;
+    width: 447px;
+    height: 438px;
+    background: url(../assets/images/DownloadClient/sec2_lt.jpg) center center no-repeat; ;
+    /* background: url(../images/sec2_lt.jpg) center center no-repeat; */
+}
+
+.sec2_rt {
+    margin-right: 59px;
+}
+
+.sec3_rt {
+    width: 463px;
+    height: 438px;
+    background: url(../assets/images/DownloadClient/sec3_rt.jpg) center center no-repeat;
+    /* background: url(../images/sec3_rt.jpg) center center no-repeat; */
+    margin-right: 59px;
+}
+
+.sec4_lt {
+    margin-left: 89px;
+    width: 447px;
+    height: 438px;
+    background: url(../assets/images/DownloadClient/sec4_lt.jpg) center center no-repeat;
+    /* background: url(../images/sec4_lt.jpg) center center no-repeat; */
+}
+
+.sec5_rt {
+    width: 359px;
+    height: 438px;
+    background: url(../assets/images/DownloadClient/sec5_rt.jpg) center center no-repeat;
+    /* background: url(../images/sec5_rt.jpg) center center no-repeat; */
+    margin-right: 59px;
+}
+
+/* 给section下的部分文字标红 */
+
+.g-section span {
+    color: #d10000;
+}
+
+
+/* m-link的样式 */
+
+.m-link {
+    background-color: #f2f2f2;
+    border-top: 1px solid #d3d3d3;
+  }
+  .m-link .g-ft {
+    height: 149px;
+    padding-top: 21px;
+    box-sizing: border-box;
+  }
+  .m-link .g-ft .copy .copy-link {
+    height: 24px;
+  }
+  .m-link .g-ft .copy .copy-link > ul > li {
+    float: left;
+  }
+  .m-link .g-ft .copy .copy-link > ul > li a {
+    color: #999999;
+    font-size: 12px;
+  }
+  .m-link .g-ft .copy .copy-link > ul > li span {
+    padding: 0 11px;
+    color: #d1c2d1;
+  }
+  .m-link .g-ft .copy p {
+    height: 24px;
+    color: #666666;
+    font-size: 12px;
+  }
+  .m-link .g-ft .copy p a {
+    color: #333333;
+  }
+  .m-link .g-ft .enter {
+    height: 129px;
+    padding-right: 9px;
+  }
+  .m-link .g-ft .enter ul li {
+    float: left;
+    margin-left: 45px;
+  }
+  .m-link .g-ft .enter ul li .enter-one {
+    display: block;
+    width: 50px;
+    height: 54px;
+    background: url(../assets/images/index/foot_enter_new.png) no-repeat 0 0;
+    background-position: -68px -113px;
+    float: left;
+    background-size: 118.182px auto;
+    color: #747474;
+  }
+  .m-link .g-ft .enter ul li .enter-two {
+    display: block;
+    width: 50px;
+    height: 54px;
+    background: url(../assets/images/index/foot_enter_new.png) no-repeat 0 0;
+    background-position: 0 0;
+    background-size: 118.182px auto;
+  }
+  .m-link .g-ft .enter ul li .enter-three {
+    display: block;
+    width: 50px;
+    height: 54px;
+    background: url(../assets/images/index/foot_enter_new.png) no-repeat 0 0;
+    background-size: 118.182px auto;
+    background-position: -68px -57px;
+  }
+  .m-link .g-ft .enter ul li .enter-four {
+    display: block;
+    width: 50px;
+    height: 54px;
+    background: url(../assets/images/index/foot_enter_new.png) no-repeat 0 0;
+    background-size: 118.182px auto;
+    background-position: 0 -113px;
+  }
+  .m-link .g-ft .enter ul li span {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+  }

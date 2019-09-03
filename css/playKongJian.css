@@ -1,0 +1,554 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.music {
+  width: 100%;
+  height: 47px;
+  position: fixed;
+  bottom: -47px;
+  background-color: rgba(49, 46, 46, 0.9);
+  user-select: none;
+  border-top: 2px solid black;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  transition: 0.3s;
+}
+.music i {
+  cursor: pointer;
+}
+.music .container {
+  width: 990px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+.music .container .btns {
+  width: 127px;
+  height: 100%;
+  float: left;
+  line-height: 48px;
+  overflow: hidden;
+  position: relative;
+}
+.music .container .btns i {
+  font-size: 28px;
+  float: left;
+  margin-right: 56px;
+  color: white;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: block;
+}
+.music .container .btns i:nth-child(2) {
+  margin-right: 0;
+  font-size: 36px;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 37px;
+  opacity: 1;
+}
+.music .container .btns i:nth-child(3) {
+  margin-right: 0;
+  font-size: 37px;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 38px;
+  display: none;
+  opacity: 1;
+}
+.music .container .btns i:nth-child(4) {
+  margin-right: 0;
+}
+.music .container .btns i:hover {
+  opacity: 1;
+  text-shadow: 0 0 10px white;
+}
+.music .container .music-icon {
+  width: 49px;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+.music .container .music-icon .rongqi {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 3px;
+  border-radius: 4px;
+  box-shadow: 0 0 3px gray;
+  background-color: rgba(49, 46, 46, 0.9);
+  overflow: hidden;
+  transition: 0.3s;
+  margin-left: 3px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+.music .container .music-icon .rongqi #int_icon {
+  font-size: 34px;
+  color: gray;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.music .container .music-icon .rongqi img {
+  display: none;
+}
+.music .container .music-icon .rongqi::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, #fff, transparent);
+  position: absolute;
+  top: 0;
+  left: -30px;
+  transform: skewX(-45deg);
+}
+.music .container .music-icon .rongqi:hover::after {
+  left: 60px;
+  transition: 0.7s;
+}
+.music .container .music-icon .rongqi:hover {
+  opacity: 1;
+  box-shadow: 0 0 5px white;
+}
+.music .container .play {
+  width: 608px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.music .container .play .music-line {
+  width: 496px;
+  height: 8px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 1px gray;
+}
+.music .container .play .music-line .music-line-red {
+  width: 0;
+  height: 100%;
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.music .container .play .music-line .music-l-ball {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 50%;
+  opacity: 1;
+  transition: box-shadow 0.3s;
+  z-index: 1;
+}
+.music .container .play .music-line .music-l-ball .small-ball-red {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.music .container .play .music-line .music-l-ball:hover {
+  box-shadow: 0 0 10px white;
+}
+.music .container .play .music-line #tran-line {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+.music .container .play #start-time {
+  position: absolute;
+  right: 54px;
+  bottom: 7px;
+  font-size: 13px;
+  color: #ccc;
+}
+.music .container .play #end-time {
+  position: absolute;
+  right: 4px;
+  bottom: 7px;
+  font-size: 13px;
+  color: gray;
+}
+.music .container .oper {
+  width: 60px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.music .container .oper #bookMark {
+  font-size: 21px;
+  color: white;
+  opacity: 0.7;
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  transition: 0.3s;
+}
+.music .container .oper #bookMark:hover {
+  opacity: 1;
+}
+.music .container .oper #share {
+  font-size: 18px;
+  color: white;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transition: 0.3s;
+}
+.music .container .oper #share:hover {
+  opacity: 1;
+}
+.music .container .oper i:hover {
+  text-shadow: 0 0 5px white;
+}
+.music .container .ctrl {
+  width: 130px;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+  position: relative;
+}
+.music .container .ctrl .sound-v-Box {
+  width: 32px;
+  height: 114px;
+  background-color: rgba(49, 46, 46, 0.7);
+  position: absolute;
+  top: -114px;
+  left: 7px;
+  display: none;
+}
+.music .container .ctrl .sound-v-Box .sound-line {
+  width: 4px;
+  height: 86px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: black;
+  border-radius: 2px;
+}
+.music .container .ctrl .sound-v-Box .sound-line .sound-line-red {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  border-radius: 4px;
+}
+.music .container .ctrl .sound-v-Box .sound-line .sound-ball {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: box-shadow 0.3s;
+  z-index: 1;
+}
+.music .container .ctrl .sound-v-Box .sound-line .sound-ball .sound-ball-red {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+}
+.music .container .ctrl .sound-v-Box .sound-line .sound-ball:hover {
+  box-shadow: 0 0 10px white;
+}
+.music .container .ctrl .sound-v-Box .sound-line #tran_line {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.music .container .ctrl #sound {
+  position: absolute;
+  font-size: 23px;
+  color: white;
+  opacity: 0.7;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 13px;
+  transition: 0.3s;
+}
+.music .container .ctrl #sound:hover {
+  opacity: 1;
+  text-shadow: 0 0 5px white;
+}
+.music .container .ctrl #round-list {
+  position: absolute;
+  font-size: 18px;
+  opacity: 0.7;
+  color: white;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  text-shadow: 0 0 0 white;
+}
+.music .container .ctrl #round-list:hover {
+  opacity: 1;
+  text-shadow: 0 0 5px white;
+}
+.music .container .ctrl .music-list {
+  width: 59px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 85px;
+  position: relative;
+}
+.music .container .ctrl .music-list #music-listBox-btn {
+  position: absolute;
+  font-size: 22px;
+  color: white;
+  opacity: 0.7;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.music .container .ctrl .music-list #music-listBox-btn:hover {
+  opacity: 1;
+  text-shadow: 0 0 5px white;
+}
+.music .container .ctrl .music-list #music-listBox {
+  width: 40px;
+  height: 18px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%);
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  color: #ccc;
+  text-indent: 15px;
+  line-height: 18px;
+  font-size: 14px;
+}
+.music .container .ctrl .shuxian {
+  width: 2px;
+  height: 26px;
+  background-color: rgba(0, 0, 0, 0.3);
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  border-radius: 2px;
+}
+.music .big-list {
+  width: 1000px;
+  height: 300px;
+  background-color: rgba(27, 26, 26, 0.877);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -301px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: none;
+  box-shadow: 0 0 3px black;
+}
+.music .big-list .big-list-title {
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid black;
+}
+.music .big-list .big-list-title .list-text {
+  display: block;
+  width: 120px;
+  height: 100%;
+  color: white;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+.music .big-list .big-list-title .span1 {
+  display: block;
+  width: 68px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 41%;
+  line-height: 20px;
+  cursor: pointer;
+}
+.music .big-list .big-list-title .span1 div {
+  width: 16px;
+  height: 14px;
+  display: inline-block;
+  background: url(../assets/images/截图/2.png);
+  /* background: url(../assets/images/) */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.music .words {
+  position: absolute;
+  width: 250px;
+  left: 194px;
+  top: 2px;
+  height: 22px;
+}
+
+.music .big-list .big-list-title .span1 p {
+  display: inline-block;
+  height: 100%;
+  margin-left: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.music .big-list .big-list-title .span1:hover div {
+  background: url(../assets/images/截图/playlist_8\ -\ 副本\ \(2\).png);
+}
+.music .big-list .big-list-title .span1:hover p {
+  color: white;
+  text-decoration: underline;
+}
+.music .big-list .big-list-title .span2 {
+  display: block;
+  width: 41px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50.5%;
+  line-height: 20px;
+  cursor: pointer;
+}
+.music .big-list .big-list-title .span2 div {
+  width: 13px;
+  height: 14px;
+  display: inline-block;
+  background: url(../assets/images/截图/playlist_8.png);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.music .big-list .big-list-title .span2 p {
+  display: inline-block;
+  height: 100%;
+  margin-left: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.music .big-list .big-list-title .span2:hover div {
+  background: url(../assets/images/截图/playlist_8\ -\ 副本\ \(3\)\ -\ 副本.png);
+}
+.music .big-list .big-list-title .span2:hover p {
+  color: white;
+  text-decoration: underline;
+}
+.music .big-list .big-list-title .big-list-xiaoshuxian {
+  width: 1px;
+  height: 16px;
+  background-color: black;
+  border-right: 0.5px solid rgba(220, 220, 220, 0.3);
+  border-radius: 1px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 48.8%;
+}
+.music .big-list .big-list-title .big-list-dashuxian {
+  width: 1px;
+  height: 26px;
+  background-color: black;
+  border-right: 0.5px solid rgba(220, 220, 220, 0.3);
+  border-radius: 1px;
+  position: absolute;
+  top: 0;
+  left: 55.7%;
+}
+.music .big-list .big-list-title .XX {
+  background: url(../assets/images/截图/playlist_8\ -\ 副本\ \(4\).png);
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.music .big-list .big-list-title .XX:hover {
+  background: url(../assets/images/截图/playlist_8\ -\ 副本.png);
+}
+.music .suoBox {
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  right: 10px;
+  top: -22px;
+}
+.music .suoBox img {
+  display: block;
+  width: 100%;
+  transform: scale(1.3);
+}
+.music .suoBox #suo1 {
+  position: absolute;
+  top: 5px;
+  right: 19px;
+  font-size: 13px;
+  display: none;
+  transition: 0.3s;
+  color: gray;
+  opacity: 0.7;
+}
+.music .suoBox #suo1:hover {
+  color: white;
+  opacity: 0.8;
+}
+.music .suoBox #suo2 {
+  position: absolute;
+  top: 5px;
+  right: 17px;
+  font-size: 13px;
+  transition: 0.3s;
+  color: gray;
+  opacity: 0.7;
+}
+.music .suoBox #suo2:hover {
+  color: white;
+  opacity: 0.8;
+}

@@ -1,0 +1,610 @@
+
+.w {
+  width: 982px;
+  margin: 0 auto;
+}
+
+.m-top {
+  position: relative;
+  z-index: 1000;
+  height: 70px;
+  box-sizing: border-box;
+  background: #242424;
+  border-bottom: 1px solid #000;
+}
+.m-subnav {
+z-index: 90;
+height: 35px;
+box-sizing: border-box;
+background-color: #C20C0C;
+border-bottom: 1px solid #a40011;
+}
+
+.header {
+  height: 69px;
+  border-bottom: 1px solid #000000;
+  background-color: #242424;
+}
+.header .content {
+  height: 69px;
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.header .content i {
+  display: block;
+  width: 157px;
+  height: 33px;
+  background: url(../assets/images/AnchorRadio/topbar.png) 0 -19px no-repeat;
+  margin-top: 19px;
+  margin-right: 19px;
+  float: left;
+}
+.header .content ul li {
+  float: left;
+}
+.header .content ul li a {
+  float: left;
+  width: 94px;
+  height: 69px;
+  text-align: center;
+  font-size: 12px ;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 69px;
+}
+.header .content ul li:nth-child(1) {
+  background-color: #000000;
+}
+.header .content ul li:nth-child(6) {
+  position: relative;
+}
+.header .content ul li:nth-child(6) i {
+  width: 26px;
+  height: 13px;
+  background: url(../assets/images/AnchorRadio/topbar.png) -192px 0 no-repeat;
+  position: absolute;
+  left: 90px;
+  top: 5px;
+}
+.header .content span {
+  position: absolute;
+  top: 28px;
+  left: 841px;
+}
+.header .content input {
+  width: 158px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 16px;
+  margin-top: 19px;
+  margin-left: 92px;
+  text-align: center;
+  line-height: 32px;
+}
+.header .content a div {
+  height: 32px;
+  width: 90px;
+  border: 1px solid #4f4f4f;
+  border-radius: 16px;
+  margin-top: 19px;
+  margin-left: 12px;
+  text-align: center;
+  line-height: 32px;
+  color: #cccccc;
+}
+.navbar {
+  background-color: #c20c0c;
+  height: 34px;
+  border-bottom: 1px solid #a40011;
+  position: relative;
+}
+.navbar .contain ul {
+  margin-left: 116px;
+}
+.navbar .contain ul li {
+  float: left;
+  width: 95px;
+  text-align: center;
+  line-height: 34px;
+  height: 34px;
+  position: relative;
+}
+.navbar .contain ul li a {
+  font-size: 12px;
+  color: #ffffff;
+}
+.navbar .contain ul li i {
+  width: 12px;
+  height: 12px;
+  background: url(../assets/images/AnchorRadio/white-r-icon@3x.png);
+  position: absolute;
+  top: 6px;
+  left: 60px;
+}
+.navbar .contain ul li:nth-child(1) {
+  position: relative;
+}
+.navbar .contain ul li:nth-child(1) span {
+  width: 12px;
+  height: 6px;
+  position: absolute;
+  background: url(../assets/images/AnchorRadio/topbar.png) -226px 0 no-repeat;
+  top: -6px;
+  left: 41.5px;
+}
+.navbar .contain ul li:nth-child(6) a {
+  height: 20px;
+  width: 74px;
+  background-color: #9b0909;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+  transform: translateY(-50%);
+  line-height: 20px;
+}
+.smallnavbar {
+  height: 259px;
+  margin-top: 42px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  position: relative;
+}
+.smallnavbar .arr {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+.smallnavbar .arr .left {
+  width: 10px;
+  height: 20px;
+  background: url(../assets/images/AnchorRadio/radio_slide.png) -4px -35px no-repeat;
+}
+.smallnavbar .arr .right {
+  width: 10px;
+  height: 20px;
+  background: url(../assets/images/AnchorRadio/radio_slide.png) -35px -35px no-repeat;
+}
+.smallnavbar ul {
+  height: 100%;
+}
+.smallnavbar ul li {
+  width: 11.11%;
+  height: 50%;
+  float: left;
+}
+.smallnavbar ul li p {
+  text-align: center;
+}
+.smallnavbar ul li div {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.smallnavbar ul li:nth-child(1) div {
+  background: url(../assets/images/AnchorRadio/1.jpg);
+}
+.smallnavbar ul li:nth-child(2) div {
+  background: url(../assets/images/AnchorRadio/2.jpg);
+}
+.smallnavbar ul li:nth-child(3) div {
+  background: url(../assets/images/AnchorRadio/3.jpg);
+}
+.smallnavbar ul li:nth-child(4) div {
+  background: url(../assets/images/AnchorRadio/4.jpg);
+}
+.smallnavbar ul li:nth-child(5) div {
+  background: url(../assets/images/AnchorRadio/5.jpg);
+}
+.smallnavbar ul li:nth-child(6) div {
+  background: url(../assets/images/AnchorRadio/6.jpg);
+}
+.smallnavbar ul li:nth-child(7) div {
+  background: url(../assets/images/AnchorRadio/7.jpg);
+}
+.smallnavbar ul li:nth-child(8) div {
+  background: url(../assets/images/AnchorRadio/8.jpg);
+}
+.smallnavbar ul li:nth-child(9) div {
+  background: url(../assets/images/AnchorRadio/9.jpg);
+}
+.smallnavbar ul li:nth-child(10) div {
+  background: url(../assets/images/AnchorRadio/10.jpg);
+}
+.smallnavbar ul li:nth-child(11) div {
+  background: url(../assets/images/AnchorRadio/11.jpg);
+}
+.smallnavbar ul li:nth-child(12) div {
+  background: url(../assets/images/AnchorRadio/12.jpg);
+}
+.smallnavbar ul li:nth-child(13) div {
+  background: url(../assets/images/AnchorRadio/13.jpg);
+}
+.smallnavbar ul li:nth-child(14) div {
+  background: url(../assets/images/AnchorRadio/14.jpg);
+}
+.smallnavbar ul li:nth-child(15) div {
+  background: url(../assets/images/AnchorRadio/15.jpg);
+}
+.smallnavbar ul li:nth-child(16) div {
+  background: url(../assets/images/AnchorRadio/16.jpg);
+}
+.smallnavbar ul li:nth-child(17) div {
+  background: url(../assets/images/AnchorRadio/17.jpg);
+}
+.smallnavbar ul li:nth-child(18) div {
+  background: url(../assets/images/AnchorRadio/18.jpg);
+}
+.smallnavbar ol {
+  position: absolute;
+  left: 50%;
+  bottom: 22px;
+  transform: translateX(-50%);
+}
+.smallnavbar ol li {
+  width: 6px;
+  height: 6px;
+  background-color: #ba2300;
+  border-radius: 3px;
+  float: left;
+}
+.smallnavbar ol li:nth-child(2) {
+  background-color: #dddddd;
+  margin-left: 17px;
+}
+.program {
+  height: 678px;
+  box-sizing: border-box;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  padding-left: 40px;
+}
+.program .left {
+  width: 426px;
+}
+.program .left .top {
+  height: 35px;
+  border-bottom: 2px solid #c20c0c;
+  position: relative;
+}
+.program .left .top h3 {
+  font-size: 24px;
+  color: #494949;
+  float: left;
+}
+.program .left .top div {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.program .left ul {
+  border: 1px solid #e2e2e2;
+  border-top: none;
+}
+.program .left ul li {
+  height: 60px;
+  padding-left: 20px;
+}
+.program .left ul li:nth-child(2n) {
+  background-color: #fff7f7;
+}
+.program .left ul li img {
+  margin-top: 10px;
+}
+.program .left ul li .info {
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 264px;
+  box-sizing: border-box;
+}
+.program .left ul li .info p {
+  height: 20px;
+}
+.program .left ul li .info p:nth-child(1) {
+  color: #333333;
+}
+.program .left ul li .info p:nth-child(2) {
+  color: #999999;
+}
+.program .left ul li .sort {
+  border: 1px solid #999999;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #999999;
+  margin-top: 21px;
+  float: left;
+}
+.program .right {
+  width: 426px;
+  margin-right: 40px;
+}
+.program .right .top {
+  height: 35px;
+  border-bottom: 2px solid #c20c0c;
+  position: relative;
+}
+.program .right .top h3 {
+  font-size: 24px;
+  color: #494949;
+  float: left;
+}
+.program .right .top div {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.program .right ul {
+  border: 1px solid #e2e2e2;
+  border-top: none;
+}
+.program .right ul li {
+  height: 60px;
+}
+.program .right ul li:nth-child(2n) {
+  background-color: #fff7f7;
+}
+.program .right ul li:nth-child(3) div div i {
+  width: 6px;
+  height: 6px;
+  background: url(../assets/images/AnchorRadio/icon.png) -74px -324px;
+}
+.program .right ul li:nth-child(3) .sort .bar {
+  width: 60px;
+}
+.program .right ul li:nth-child(5) div div i {
+  width: 16px;
+  height: 5px;
+  background: url(../assets/images/AnchorRadio/icon.png) -67px -289px;
+}
+.program .right ul li:nth-child(5) .sort .bar {
+  width: 30px;
+}
+.program .right ul li div {
+  float: left;
+  width: 47px;
+}
+.program .right ul li div .grade {
+  text-align: center;
+  color: #da4545;
+  margin-top: 12px;
+}
+.program .right ul li div div {
+  text-align: center;
+}
+.program .right ul li div div i {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  background: url(../assets/images/AnchorRadio/icon.png) -74px -304px;
+}
+.program .right ul li div div span {
+  font-size: 1px;
+}
+.program .right ul li img {
+  margin-top: 10px;
+}
+.program .right ul li .info {
+  margin-top: 12px;
+  margin-left: 10px;
+  width: 180px;
+  box-sizing: border-box;
+}
+.program .right ul li .info p {
+  height: 20px;
+}
+.program .right ul li .info p:nth-child(1) {
+  color: #333333;
+}
+.program .right ul li .info p:nth-child(2) {
+  color: #999999;
+}
+.program .right ul li .sort {
+  width: 100px;
+  height: 8px;
+  background-color: #dedede;
+  border-radius: 4px;
+  float: right;
+  position: relative;
+  top: 26px;
+  right: 19px;
+}
+.program .right ul li .sort .bar {
+  width: 85px;
+  height: 8px;
+  background-color: #c6c6c6;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.musicStory {
+  height: 398px;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.musicStory .top {
+  width: 100%;
+  height: 35px;
+  border-bottom: 2px solid #c20c0c;
+  position: relative;
+}
+.musicStory .top h3 {
+  font-size: 24px;
+  color: #333333;
+}
+.musicStory .top div {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.musicStory .center {
+  padding-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 160px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.musicStory .center .left {
+  width: 465px;
+}
+.musicStory .center .left div {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+}
+.musicStory .center .left div img {
+  width: 120px;
+}
+.musicStory .center .left p {
+  padding-top: 20px;
+  height: 43px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.musicStory .center .right {
+  width: 435px;
+}
+.musicStory .center .right div {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+}
+.musicStory .center .right div img {
+  width: 120px;
+}
+.musicStory .center .right p {
+  padding-top: 20px;
+  height: 43px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.musicStory .bottom {
+  padding-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.musicStory .bottom .left {
+  width: 465px;
+}
+.musicStory .bottom .left div {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+}
+.musicStory .bottom .left div img {
+  width: 120px;
+}
+.musicStory .bottom .left p {
+  padding-top: 20px;
+  height: 43px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.musicStory .bottom .right {
+  width: 435px;
+}
+.musicStory .bottom .right div {
+  width: 120px;
+  height: 120px;
+  float: left;
+  margin-right: 20px;
+}
+.musicStory .bottom .right div img {
+  width: 120px;
+}
+.musicStory .bottom .right p {
+  padding-top: 20px;
+  height: 43px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer {
+  border-top: 1px solid #d3d3d3;
+  height: 148px;
+}
+.footer .content {
+  padding-top: 23px;
+}
+.footer .content .left {
+  float: left;
+  width: 612px;
+}
+.footer .content .left ul {
+  height: 24px;
+  margin-left: -12px;
+}
+.footer .content .left ul li {
+  float: left;
+  color: #999999;
+}
+.footer .content .left ul li a {
+  float: left;
+  padding-left: 12px;
+  padding-right: 12px;
+  color: #999999;
+}
+.footer .content .left ul li a:nth-child(1) {
+  left: 0;
+}
+.footer .content .left p {
+  height: 23px;
+  color: #666666;
+}
+.footer .right {
+  float: right;
+}
+.footer .right ul li {
+  float: left;
+  text-align: center;
+  margin-left: 40px;
+}
+.footer .right ul li i {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background: url(../assets/images/AnchorRadio/foot_enter_new.png) -60px -100px;
+  background-size: 104px;
+}
+.footer .right ul li span {
+  display: block;
+  margin-top: -4px;
+}
+.footer .right ul li:nth-child(4) {
+  margin-right: 8px;
+}
+.footer .right ul li:nth-child(2) i {
+  background: url(../assets/images/AnchorRadio/foot_enter_new.png) 0px 0px;
+  background-size: 104px;
+}
+.footer .right ul li:nth-child(3) i {
+  background: url(../assets/images/AnchorRadio/foot_enter_new.png) -60px -50px;
+  background-size: 104px;
+}
+.footer .right ul li:nth-child(4) i {
+  background: url(../assets/images/AnchorRadio/foot_enter_new.png) 0px -100px;
+  background-size: 104px;
+}

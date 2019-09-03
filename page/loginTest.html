@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta http-equiv="Access-Control-Allow-Origin" content="*" /> -->
+    <title>Document</title>
+    <script src="../js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="#" method="POST" id="form1">
+            手机号：<input type="text" placeholder="手机号" id='phone'><br>
+            密码: <input type="password" placeholder="密码" id='pwd'> <button id="btn">获取验证码</button><br>
+            <!-- <button id="login-button">登录</button> -->
+            <input type="button" id="login-button" value="登陆">
+        </form>
+    </div>
+    <script>
+            var form = document.getElementById('form')
+
+            // 获取value
+            var phone = document.getElementById('phone').value
+            var pwd = document.getElementById('pwd').value
+            // console.log(phone)
+            // console.log(pwd)
+
+
+            // 发送验证码
+            var btn = document.getElementById('btn')
+            btn.onclick = function() {
+                $.ajax( {  
+                type: "POST",  
+                url: "http://localhost:3000/captcha/sent?phone=18352814638",  
+                // data: {username:$("#username").val(), password:$("#password").val()},  
+                dataType: "json",  
+                success: function(data){  
+                            if(data.code === 200) {
+                                alert("发送成功")
+                            }  
+                        },  
+                error:function(e){  
+                    alert("系统繁忙请稍后重试")    
+                }  
+                });  
+            }
+            // 发送验证码完成
+
+            // /captcha/verify?phone=13xxx&captcha=1597
+            // /login/cellphone?phone=xxx&password=yyy
+            var action1 = 'http://localhost:3000/login/cellphone?phone=18352814638&password=li18352814638'
+            // console.log(form.action)
+
+            var loginBtn = document.getElementById('login-button')
+            // form.action = action1
+            // 开始登陆
+            // var phoneVal = $('#phone').val()
+            // var pwdVal = $('#pwd').val()
+            // 获取value
+            var phone = document.getElementById('phone').value
+            var pwd = document.getElementById('pwd').value
+            // console.log(document.getElementById('phone'))
+
+            // console.log(phone)
+            // console.log(pwd)
+            // jQuery.support.cors = true;
+            loginBtn.onclick = function() {
+                // 获取value
+                var phone = document.getElementById('phone').value
+                var pwd = document.getElementById('pwd').value
+            
+                console.log(phone)
+                console.log(pwd)
+                // console.log($('#form1').serialize())
+                $.ajax({  
+                type: "get",  
+                url: "http://localhost:3000/login/cellphone?phone="+phone+"&password="+pwd,  
+                // contentType: "application/x-www-form-urlencoded",
+                // data: {phone:$("#phone").val(), password:$("#pwd").val()},  
+                // data: $('#form1').serialize(),
+                dataType: "json",  
+                success: function(data){  
+                            if(data.code === 200) {
+                                console.log("登陆成功")
+                                console.log(data)
+                            }  
+                        },  
+                error:function(e){  
+                    alert("系统繁忙请稍后重试")    
+                }  
+                });  
+            }
+// jQuery.support.cors = true;
+    </script>
+</body>
+</html>

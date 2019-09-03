@@ -1,0 +1,931 @@
+.wrap {
+    width: 980px;
+
+    margin: 0 auto;
+}
+
+// 头部遮盖层
+.m-top {
+    position: relative;
+    z-index: 1000;
+    height: 70px;
+    box-sizing: border-box;
+    background: #242424;
+    border-bottom: 1px solid #000;
+}
+
+.m-subnav {
+    z-index: 90;
+    height: 35px;
+    box-sizing: border-box;
+    background-color: #C20C0C;
+    border-bottom: 1px solid #a40011;
+}
+
+@keyframes bian {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+
+    30% {
+        opacity: 0.99;
+    }
+    // 66.66% {
+    //     opacity: 0.66;
+    // }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+// 轮播图 banner
+.m-banner {
+    // width: 730px;
+    height: 336px;
+    // animation-name: bian;
+    // animation-duration: 1s;
+    // animation-iteration-count: infinite;
+    .banner-wrap {
+        width: 1100px;
+        margin: 0 auto;
+        position: relative;
+        .banner-left-icon {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 39px;
+            height: 64px;
+
+            background: url(../assets/images/index/banner0819.png) 0 -359px;
+
+            &:hover {
+                background-position: 0 -430px;
+            }
+        }
+        .banner-right-icon {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 39px;
+            height: 64px;
+
+            background: url(../assets/images/index/banner0819.png) 0 -507px;
+
+            &:hover {
+                background-position: 0 -578px;
+            }
+        }
+            
+            .wrap {
+                position: relative;
+                // width: 730px;
+                height: 336px;
+                overflow: hidden;
+                .a-banner-bg() {
+                    width: 100%;
+                    height: 336px;
+                }
+             
+                .downloadClient {
+                    position: absolute;
+                    right: 0;
+                    width: 254px;
+                    height: 336px;
+                    background: url(../assets/images/index/download.png) no-repeat;
+    
+                    p {
+                        position: absolute;
+                        bottom: 44px;
+                        left: 15px;
+                        color: #8d8d8d;
+                    }
+                }
+                .banner-dots {
+                    width: 730px;
+                    // position: relative;
+                    height: 20px;
+                    position: absolute;
+                    bottom: 10px;
+                    // background-color: #000;
+                    >ul {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        // bottom: 10px;
+                        >li {
+                            float: left;
+                            margin-right: 4px;
+                            >a {
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                background: url(../assets/images/index/banner0819.png) no-repeat 2px -344px;
+                                
+                            }
+    
+                            &:hover {
+                                >a {
+                                    background: url(../assets/images/index/banner0819.png) no-repeat -16px -344px;
+                                }
+                            }
+                            
+                        }
+                        // li:first-child {
+                        //     // >a {
+                        //     //     //background: url(../assets/images/index/banner0819.png) no-repeat -16px -344px;
+                        //     // }
+                        // }
+                    }
+                   
+                }
+                >ul {
+                    // transition: all 1s;
+                    .a-banner-bg();
+                    // width: 6570px;
+                    // overflow: hidden;
+                    position: absolute;
+                    left: 0;
+    
+                    >li {
+                        float: left;
+                        margin-right: 250px;
+    
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        
+}
+
+// 主体部分 discover-module
+.discover-module {
+    .module-left {
+        background-color: #fff;
+        width: 730px;
+
+        padding: 20px 20px 0;
+        padding-bottom: 40px;
+
+        box-sizing: border-box;
+        border-left: 1px solid #d3d3d3;
+        border-right: 1px solid #d3d3d3;
+        .recomm-hot {
+            .hot-title {
+                padding-left: 10px;
+                height: 35px;
+                border-bottom: 2px solid #c10d0c;
+                box-sizing: border-box;
+    
+                .title-content {
+                    position: relative;
+                    height: 100%;
+                    padding-left: 24px;
+                    padding-right: 10px;
+                    background: url(../assets/images/index/index.png) no-repeat -234px -157px ;
+                    a {
+                        color: #666666;
+                        &.content-t {
+                            font-size: 20px;
+                            color: #333333;
+                            margin-right: 20px;
+                        }
+                    }
+                    em {
+                        margin: 0 14px;
+                        color: #ccc;
+                    }
+    
+                    span {
+                        text-align: right;
+                        line-height: 35px;
+                        a {
+                            margin-right: 18px;
+                        }
+                        .more-arrow {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 12px;
+                            background: url(../assets/images/index/index.png) 0 -240px;
+                        }
+                    }
+                }
+    
+            }
+    
+            .hot-main {
+                margin-top: 20px;
+    
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+    
+                    li {
+                        a {
+                            display: block;
+                            // width: 140px;
+                            // height: 140px;
+                            position: relative;
+
+                            .bg {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 140px;
+                                height: 140px;
+                                background: url(../assets/images/index/coverall.png) no-repeat 0 0;
+
+                            }
+                            .play-dec {
+                                position: absolute;
+                                bottom: 0px;
+                                background-color: rgba(0,0,0,0.3);
+                                width: 140px;
+                                height: 25px;
+                                border-top: 1px solid #20201f;
+                                border-bottom: 1px solid #20201f;
+    
+                                .play-dec-content {
+                                    height: 25px;
+    
+                                    border-top: 1px solid #7c7c7b;
+    
+                                    padding: 0 10px 0 10px;
+    
+                                    box-sizing: border-box;
+    
+                                    .listen {
+                                        margin-top: 7px;
+                                        width: 15px;
+                                        height: 12px;
+                                        background: url(../assets/images/index/iconall.png) 0 -24px;
+                                    }
+                                    span {
+                                        margin-top: 4px;
+                                        margin-left: 4px;
+    
+                                        color: #cccccc;
+                                    }
+                                    .play {
+                                        margin-top: 3px;
+                                        width: 17px;
+                                        height: 17px;
+                                        
+                                        background: url(../assets/images/index/iconall.png) 0 0;
+                                    }
+                                }
+                            }
+                        }
+                        p {
+                            margin: 12px 0 50px 0;
+                            a {
+                                display: block;
+                                width: 144px;
+                                height: 38px;
+    
+                                
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        // 新碟上架
+        .new-disc-on-shelf {
+            margin-top: 27px;
+            .disc-title {
+                padding-left: 10px;
+                height: 35px;
+                border-bottom: 2px solid #c10d0c;
+                box-sizing: border-box;
+    
+                .disc-content {
+                    position: relative;
+                    height: 100%;
+                    padding-left: 24px;
+                    padding-right: 10px;
+                    background: url(../assets/images/index/index.png) no-repeat -234px -157px ;
+                        a.content-dot {
+                            font-size: 20px;
+                            color: #333333;
+                            margin-right: 20px;
+                        }
+                    }
+
+                    span {
+                        text-align: right;
+                        line-height: 35px;
+                        a {
+                            margin-right: 18px;
+                        }
+                        .more-arrow {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 12px;
+                            background: url(../assets/images/index/index.png) 0 -240px;
+                        }
+                    }
+            }
+            .disc-main {
+                margin-top: 20px;
+                width: 690px;
+                height: 189px;
+                border: 1px solid #d3d3d3;
+                // padding: 1px;
+                box-sizing: border-box;
+                background-color: #f5f5f5;
+                // margin-top: 29px;
+                position: relative;
+                .arrow-left {
+                    position: absolute;
+                    left: 9px;
+                    top: 75px;
+                    // transform: translateY(-50%);
+
+                    width: 8px;
+                    height: 14px;
+
+                    background: url(../assets/images/index/index.png) -265px -77px;
+
+                    &:hover  {
+                        background-position: -285px -77px;
+                    }
+                }
+                .arrow-right {
+                    position: absolute;
+                    right: 9px;
+                    top: 75px;
+                    // transform: translateY(-50%);
+
+                    width: 8px;
+                    height: 14px;
+
+                    background: url(../assets/images/index/index.png) -306px -77px;
+
+                    &:hover  {
+                        background-position: -326px -77px;
+                    }
+                }
+                ul {
+                    padding: 0 28px;
+                    margin-top: 30px;
+                    // width: 633px;
+                    // display: flex;
+                    // justify-content: space-between;
+                    
+                    li {
+                        position: relative;
+                        float: left;
+                        // padding-left: 14px;
+                        margin-left: 29px;
+                        width: 100px;
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                        >a {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                            width: 118px;
+                            height: 100px;
+                            background: url(../assets/images/index/coverall.png) no-repeat -242px -69px,
+                                        url(../assets/images/index/coverall.png)  0 -572px ;
+                                       
+                        }
+
+                        p {
+                            padding-top: 5px;
+                            &.song-name {
+                                padding-top: 10px;
+                            }
+                           a {
+                                font-size: 12px;
+                                color: #000;
+                                &.author {
+                                    color: #666666;
+                                }
+                           }
+                        }
+                    }
+                }
+            }
+    
+        }
+
+        // 榜单
+        .n-bill {
+            margin-top: 37px;
+            // 榜单标题
+            .bill-title {
+                padding-left: 10px;
+                height: 35px;
+                border-bottom: 2px solid #c10d0c;
+                box-sizing: border-box;
+    
+                .bill-content {
+                    position: relative;
+                    height: 100%;
+                    padding-left: 24px;
+                    padding-right: 10px;
+                    background: url(../assets/images/index/index.png) no-repeat -234px -157px ;
+                        a.content-dot {
+                            font-size: 20px;
+                            color: #333333;
+                            margin-right: 20px;
+                        }
+                    }
+                    span {
+                        text-align: right;
+                        line-height: 35px;
+                        a {
+                            margin-right: 18px;
+                        }
+                        .more-arrow {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 12px;
+                            background: url(../assets/images/index/index.png) 0 -240px;
+                        }
+                    }
+            }
+            // 榜单主体
+            .bill-main {
+                margin-top: 20px;
+                width: 689px;
+                height: 472px;
+
+                border: 1px solid #d3d3d3;
+                box-sizing: border-box;
+
+                background-color: #fff;
+                display: flex;
+                dl {
+                    flex: 1;
+                    background-color: #f4f4f4;
+
+                    border-right: 1px solid #d3d3d3;
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                   
+                }
+                dt {
+                    margin-top: 19px;
+                    margin-left: 19px;
+
+                    // width: 230px;
+                    height: 100px;
+
+
+                    .bsb,.xgb,.ycb {
+                        width: 80px;
+                        height: 80px;
+                        position: relative;
+                        >.bd-right {
+                            width: 116px;
+                            height: 51px;
+
+                            position: absolute;
+                            left: 90px;
+                            top: 10px;
+                            // background-color: #747474;
+
+                            >.title {
+                                display: block;
+                                color: #333333;
+                            }
+                            >.bd-play {
+                                margin-top: 13px;
+                                display: block;
+                                width: 22px;
+                                height: 22px;
+                                background: url(../assets/images/index/index.png) no-repeat -267px -205px;
+
+                                &:hover {
+                                    background: url(../assets/images/index/index.png) no-repeat -267px -235px;
+                                }
+                            }
+                            >.bd-favorite {
+                                margin-top: 15px;
+                                display: block;
+                                width: 20px;
+                                height: 20px;
+                                margin-left: 11px;
+
+                                background: url(../assets/images/index/index.png) no-repeat -300px -207px;
+
+                                &:hover {
+                                    background: url(../assets/images/index/index.png) no-repeat -300px -237px;
+                                }
+                            }
+                        }
+                        >img {
+                            width: 80px;
+                            height: 80px;
+                        }
+                        >a {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: block;
+
+                            width: 100%;
+                            height: 100%;
+                             background: 
+                            //url(../assets/images/index/index.png)  -260px 0, 
+                                    url(../assets/images/index/coverall.png) no-repeat -145px -57px;
+                                        
+                            // background-size: 80px 80px;
+                            // url(../assets/images/index/18696095720518497.jpg) no-repeat;
+                        }
+                    }
+
+                    
+                    // &.xgb {
+                    //     width: 80px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     img {
+                    //         width: 80px;
+                    //         height: 80px;
+                    //     }
+                    //     a {
+                    //         position: absolute;
+                    //         top: 0;
+                    //         left: 0;
+                    //         display: block;
+
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         background: url(../assets/images/index/coverall.png) no-repeat -242px -69px;
+                    //         // background-size: 80px 80px;
+                    //         // url(../assets/images/index/18696095720518497.jpg) no-repeat;
+                    //     }
+                    // }
+                    // &.ycb {
+                    //     width: 80px;
+                    //     height: 80px;
+                    //     position: relative;
+                    //     img {
+                    //         width: 80px;
+                    //         height: 80px;
+                    //     }
+                    //     a {
+                    //         position: absolute;
+                    //         top: 0;
+                    //         left: 0;
+                    //         display: block;
+
+                    //         width: 100%;
+                    //         height: 100%;
+                    //         background: url(../assets/images/index/coverall.png) no-repeat -242px -69px;
+                    //         // background-size: 80px 80px;
+                    //         // url(../assets/images/index/18696095720518497.jpg) no-repeat;
+                    //     }
+                    // }
+                }
+                dd {
+                    padding-left: 28px;
+                    height: 32px;
+                    line-height: 32px;
+                    padding-right: 30px;
+
+                    // a {
+                      
+                    // }
+
+                    &:nth-child(2n) {
+                        background-color: #e8e8e8;
+                    }
+                    &:nth-child(2n-1) {
+                        background-color: #f4f4f4;
+                    }
+
+                    &:nth-child(-n+4) {
+                        em {
+                            color: #c10d5a;
+                        }
+                    }
+                    &:last-child {
+                        text-align: right;
+
+                        a {
+                            display: inline-block;
+                        }
+                    }
+
+                    // a:hover {
+
+                    // }
+
+                    // a {
+                    //     display: block;
+                    //     span:hover {
+                    //         border-bottom: 1px solid #000;
+                    //     }
+                    // }
+
+                   
+                }
+            }
+        }
+    }
+       
+    
+    .module-right {
+        width: 250px;
+        // ps: 这里的位置应该由js获取
+        height: 1430px;
+
+        border-right: 1px solid #d3d3d3;
+        box-sizing: border-box;
+        background-color: #fff;
+
+        // 1
+        .user-login {
+            
+            width: 249px;
+            height: 122px;
+
+            background-color: #eaeaea;
+
+            padding: 20px 24px 0 22px;
+            box-sizing: border-box;
+            background-image: linear-gradient(#fdfdfd,#e1e1e1);
+            // background-image: linear-gradient(yellow, green);
+            p {
+                color: #666;
+                line-height: 22px;
+                padding-bottom: 20px;
+            }
+            .login-button {
+                // margin-top: 20px;
+                // padding-top: 20px;
+
+               
+                width: 100px;
+                height: 30px;
+
+                margin: 0 auto; 
+
+                border-radius: 3px;
+                line-height: 30px;
+                color: #fff;
+                text-align: center;
+
+                background: url(../assets/images/index/index.png) no-repeat 0 -195px;
+
+            }
+        }
+
+        // 2
+        .news-music {
+            padding: 0 24px 0 22px;
+
+            // 入驻歌手
+            dl.enter-singer {
+                dt {
+                    padding-top: 20px;
+                    height: 20px;
+                    line-height: 20px;
+                    border-bottom: 1px solid #cccccc;
+                    >span {
+                        color:#333333;
+                    }
+                    >a {
+                        color:#666666;
+                    }
+                }
+                dd   {
+                    background-color: #fafafa;
+                    &:hover {
+                        background: #f4f4f4;
+                    }
+                    margin-top: 14px;
+                   &:nth-child(2) {
+                       margin-top: 20px;    
+                   }
+
+                   .songer-dec {
+                        padding-left: 14px;
+                        padding-top: 12px;
+                        width: 143px;
+                        height: 62px;
+
+                        border:1px solid #e9e9e9;
+                        border-left: none;
+
+                        box-sizing: border-box;
+                        a.songer-name {
+                            display: block;
+                            color: #333;
+                            font-size: 14px;
+                        }
+                        a.songer-area {
+                            display: block;
+                            margin-top: 8px;
+                            color: #666;
+                            font-size: 12px;
+                        }
+                   }
+                }
+               
+            }
+
+            //成为网易音乐人 
+            a.apply-musican {
+                display: block;
+                width: 205px;
+                height: 30px;
+                border: 1px solid #c3c3c3;
+                box-sizing: border-box;
+
+                margin-top: 14px;
+                color: #333333;
+                line-height: 30px;
+                text-align: center;
+
+                font-weight: 700;
+
+                background: url(../assets/images/index/button2.png) no-repeat -2px -142px;
+            }
+
+
+            // 热门主播
+            .hot-people {
+                margin-top: 34px;
+                dl {
+                    >dt {
+                        color: #000;
+                        height: 20px;
+                        border-bottom: 1px solid #cccccc;
+                       
+                    }
+                    dd {
+                        height: 40px;
+                        margin-top: 10px;
+                        &:nth-child(2) {
+                            margin-top: 20px;
+                        }
+
+                        .people-dec {
+                            margin-left: 10px;
+                            position: relative;
+                            >span {
+                                position: absolute;
+                                top: 2px;
+                                left: 26px;
+                                width: 11px;
+                                height: 13px;
+                                background: url(../assets/images/index/icon.png) no-repeat 0 0;
+                            }
+                            .people-name {
+                                display: block;
+                                margin-top: 4px;
+                            }
+                            .people-title {
+                                display: block;
+                                margin-top: 4px;
+                                color: #666666;
+                            }
+                        }
+                    }
+                }
+              
+            }
+             
+        }
+
+    }
+}
+
+// 底部 link 
+.m-link {
+    background-color: #f2f2f2;
+    border-top: 1px solid #d3d3d3;
+    .g-ft {
+        // margin-top: 3000px;
+        height: 149px;
+        padding-top: 21px;
+        box-sizing: border-box;
+        .copy {
+            .copy-link {
+                height: 24px;
+                >ul {
+                    >li {
+                        float: left;
+    
+                        // border-right: 1px solid #d1c2d1;
+    
+    
+                       
+                        a {
+    
+                            color: #999999;
+                            font-size: 12px;
+    
+                        }
+    
+                        span {
+                            padding: 0 11px;
+    
+                            color: #d1c2d1;
+                        }
+                    }
+                    
+                    
+                }
+            }
+            p {
+                height: 24px;
+                color: #666666;
+                font-size: 12px;
+    
+                a {
+                    color: #333333;
+                }
+                
+            }
+        }
+    
+        .enter {
+            height: 129px;  
+            padding-right: 9px;      
+            .enter-num() {
+                display: block;
+                width: 50px;
+                height: 54px;
+                background: url(../assets/images/index/foot_enter_new.png) no-repeat 0 0;
+            }
+            ul {
+                li {
+                    float: left;
+                    margin-left: 45px;  
+    
+                    .enter-one {
+                        .enter-num();
+                        background-position: -68px -113px;
+                        float: left;
+                        background-size: 118.182px auto;
+                        // background-color: red;
+                        color: #747474;
+                    }
+                    .enter-two {
+                        .enter-num();
+                        background-position: 0 0;
+                        background-size: 118.182px auto;
+                    }
+                    .enter-three {
+                        .enter-num();
+                        
+                        background-size: 118.182px auto;
+                        background-position: -68px -57px;
+                    }
+                    .enter-four {
+                        .enter-num();
+                        background-size: 118.182px auto;
+                        background-position: 0 -113px;
+                    }
+    
+                    span {
+                        display: block;
+                        text-align: center;
+                        padding-top: 5px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+// 歌曲显示播放，添加与播放的按钮
+.z-hvr {
+    background: url(../assets/images/index/index.png) no-repeat -267px -205px,
+                url(../assets/images/index/index.png) no-repeat -300px -207px;;
+    background-color: red;
+}
+

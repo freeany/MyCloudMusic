@@ -1,0 +1,156 @@
+/* css 的初始化 */
+
+/* 指定当前css文件, 编码格式是utf-8 */
+@charset "UTF-8";
+
+/* 清除默认的外边距和内边距
+    其实并不是每个标签都有默认的内外边距的，原来使用*的方法在大项目，
+    动辄几万个标签的页面就非常消耗性能了,所以大项目中一般会找到有默认
+    margin和padding的标签单独清除会更好一点
+ */
+ html,body {
+    /* width: 100%; */
+    /* height: 100%; */
+    word-wrap: break-word;
+    word-break: break-word;
+ }
+ html, body,img,iframe {
+   border: 0;
+ }
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {
+  margin: 0;
+  padding: 0;
+}
+body, textarea, select, input, button {
+    font-size: 12px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ img, input, button, textarea {
+  border: none;
+  padding: 0;
+  margin: 0;
+  /*去除点击之后的轮廓线*/
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+textarea {
+  /*禁止文本域标签的用户自由缩放*/
+  resize: none;
+}
+
+img {
+  border: none;
+  /* 设置图片默认的垂直对齐方式为中线对齐*/
+  vertical-align: middle;
+}
+
+table {
+  /*边框合并*/
+  border-collapse: collapse;
+}
+
+body {
+  /* 将整个页面的字体, 默认重置 */
+  /* font: 12px/18px Arial, Verdana, "SimSun"; */
+  /*
+    font：style weight size/line-height  family
+    font的练习形式中  前两个可以省略
+  */
+  /* min-width: 982px; */
+  background: #f5f5f5;
+}
+
+/*双伪元素清除法：
+    1、清除浮动
+    2、解决margin的塌陷问题
+*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* 兼容 IE 67 */
+.clearfix {
+  *zoom: 1;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 100%;
+}
+
+/* 
+  buis因为没有语义，所以不推荐用来给文字设置样式，但是有的时候需要一些没有语义的标签来打下手，
+  比如字体图标等等，此时可以废物利用，把之前不推荐使用的标签去除样式，来用于其他用途。
+*/
+i, s,em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+/*字体图标：span  i*/
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+/*单行溢出*/
+.one-txt-cut {
+  overflow: hidden;
+  /* 文字在一行显示, 不换行 */
+  white-space: nowrap;
+  /* 文字溢出显示省略号 */
+  text-overflow: ellipsis;
+}
+/*多行溢出*/
+.txt-cut {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/*
+  版心：宽度固定并且水平居中的盒子
+  在使用别人写好的base.css文件时，注意每个页面的版心可能是不一样的，需要单独测量设置
+*/
+
+.wrap {
+  /* width: 980px; */
+  margin: 0 auto;
+}
+
+/*最后需要删除*/
+body {
+  background-color: #f5f5f5;
+}
+
+/* a:hover {
+    text-decoration: none; 
+    border-bottom: 1px solid #333; 
+} */
